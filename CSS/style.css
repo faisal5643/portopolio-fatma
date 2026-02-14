@@ -1,0 +1,443 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap");
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+header.navbar-container {
+  max-width: 100%;
+  width: 100%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-block: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: #fff;
+}
+
+header.navbar-container.logo img {
+  width: 150px;
+}
+
+header.navbar-container .nav-list ul {
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 3rem 2rem;
+}
+
+header.navbar-container .nav-list li {
+  list-style-type: none;
+}
+
+header.navbar-container .nav-list ul li a {
+  text-decoration: none;
+  font-size: 1.05rem;
+  color: black;
+  padding: 0.5rem 1.5rem;
+  border-radius: 999px;
+  transition: all 0.3 ease-in-out;
+}
+
+header.navbar-container .nav-list li:hover a {
+  background-color: #db63ff;
+  color: white;
+}
+
+main {
+  max-width: 1200px;
+  width: 100%;
+  margin-inline: auto;
+  padding: 2rem 4rem;
+  flex: 1;
+  display: block;
+  align-items: center;
+}
+
+main .content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+main .content .content-description {
+  flex: 1 1;
+}
+
+main .content .content-description .title {
+  font-size: 3.5rem;
+  margin-block: 1rem;
+}
+
+main .content .content-description p {
+  line-height: 1.7rem;
+  font-size: 1.2rem;
+}
+
+main .content .content-description button {
+  padding: 0.8rem 2.5rem;
+  margin-block-start: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background-color: #db63ff;
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+}
+
+main .content .content-description button:hover {
+  border: 3px solid #db63ff;
+  color: #db63ff;
+  background-color: transparent;
+}
+
+main .content .content-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .content .content-image img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  object-position: center 10%;
+  border-radius: 50%;
+}
+
+main aside {
+  position: fixed;
+  inset-block: 0;
+  inset-inline-end: 0;
+  margin-top: 100px;
+}
+
+main aside .social-media {
+  height: 100%;
+  display: flex;
+}
+
+main aside .social-media ul {
+  padding: 1.5rem 1rem;
+  margin: auto;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  background-color: #db63ff;
+
+  display: flex;
+  flex-flow: column-reverse nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+main aside .social-media li {
+  list-style-type: none;
+}
+
+main aside .social-media li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+  transition: all 0.1s ease-in-out;
+}
+
+main aside .social-media li a:hover {
+  color: #e0dfff;
+}
+
+.content-image-about img {
+  margin: auto;
+  min-width: 250px;
+  width: 350px;
+  border-radius: 10%;
+  margin-right: 50px;
+}
+
+.about-title {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.about-title h2 {
+  font-size: 2rem;
+  margin: 0;
+  text-align: center;
+}
+
+.about-container {
+  padding-top: 20px;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.about-box {
+  background-color: white;
+  border: 1px solid #db63ff;
+  padding: 15px;
+  border-radius: 10%;
+}
+
+.about-box i {
+  display: flex;
+  justify-content: center;
+}
+
+.about-box h3 {
+  text-align: center;
+  font-size: 10px;
+}
+
+.about-title .about-container .about-box p {
+  text-align: center;
+  font-size: 10px;
+  margin: 0;
+}
+
+.about-paragraf p {
+  margin-bottom: 34px;
+  font-size: 18px;
+}
+
+.about-paragraf a {
+  padding-top: 0, 8rem;
+  padding-bottom: 0, 8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background-color: #db63ff;
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+
+.about-paragraf a:hover {
+  border: 3px solid #db63ff;
+  color: #db63ff;
+  background-color: transparent;
+}
+
+.certificate {
+  display: block;
+  text-align: center;
+  padding-top: 7rem;
+}
+
+.certificate-title h2 {
+  font-size: 2rem;
+  margin: 0;
+  text-align: center;
+}
+
+.certificate-title p {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.certificate-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5px;
+}
+
+.certificate-item {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 10px;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+.certificate-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.certificate-item:hover {
+  transform: scale(1.1);
+  z-index: 2;
+}
+
+.contact-detail {
+  width: 25%;
+  height: 100%;
+  flex: 0, 5;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  margin-top: 15px;
+  position: relative;
+}
+
+.contact-detail .details {
+  margin: 14px;
+  text-align: center;
+}
+
+.contact-detail .details i {
+  font-size: 30px;
+  color: #db63ff;
+  margin-bottom: 10px;
+}
+
+.contact-detail .details .topic {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.contact-detail .details .text-one,
+.contact-detail .details .text-two {
+  font-size: 14px;
+  color: #afafb6;
+}
+
+.contact-form h2 {
+  margin-bottom: 5px;
+}
+
+.contact-form form {
+  display: grid;
+  gap: 1rem;
+}
+
+.contact-form label {
+  font-weight: 500;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+}
+
+footer {
+  padding: 25px;
+  color: #e0dfff;
+  background-color: #db63ff;
+  text-align: center;
+}
+
+/* ========================= */
+/*        RESPONSIVE         */
+/* ========================= */
+
+/* Tablet */
+@media screen and (max-width: 992px) {
+  main {
+    padding: 2rem;
+  }
+
+  main .content {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding-top: 120px;
+  }
+
+  main .content .content-image img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .about-container {
+    flex-wrap: wrap;
+  }
+
+  .certificate-container {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-detail {
+    width: 100%;
+    align-items: center;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 576px) {
+  header.navbar-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  header.navbar-container .nav-list ul {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  main {
+    padding: 1.5rem;
+  }
+
+  main .content {
+    padding-top: 140px;
+  }
+
+  main .content .content-description .title {
+    font-size: 2rem;
+  }
+
+  main .content .content-description p {
+    font-size: 1rem;
+  }
+
+  main .content .content-image img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .about-box {
+    width: 100%;
+  }
+
+  .certificate-container {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-detail {
+    text-align: center;
+  }
+
+  main aside {
+    display: none; /* Hilangkan social media samping di HP */
+  }
+}
